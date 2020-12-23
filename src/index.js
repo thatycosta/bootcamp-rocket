@@ -15,7 +15,6 @@ function logRequests(request, response, next) {
 
     const logLabel = `[${method.toUpperCase()}] ${url}`;
 
-    //console.log(logLabel);
     console.time(logLabel);
 
     next();
